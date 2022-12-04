@@ -3,10 +3,13 @@ import React from "react";
 import "./App.css";
 //import axios from "axios";
 
-export default function Weather() {
+export default function Weather(props) {
+  let tempHigh = `Temperature is 89℉`;
+  let tempLow = `Temperature is 20℉`;
+  let city = "Raleigh";
   function handleClick(event) {
     event.preventDefault();
-    alert("Hello!");
+    alert("I am functioning!");
   }
   return (
     <div className="SearchBox">
@@ -19,9 +22,9 @@ export default function Weather() {
       <div className="row">
         <div className="col-12">
           <ul>
-            <li>Today</li>
-            <li>Temp High</li>
-            <li>Temp Low</li>
+            <li>Today's Weather for {city} </li>
+            <li>{tempHigh}</li>
+            <li>{tempLow}</li>
             <li>Image</li>
           </ul>
         </div>
