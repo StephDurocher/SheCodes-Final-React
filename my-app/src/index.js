@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
+import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,7 @@ root.render(
       <h1>Weather App</h1>
       <div className="card">
         <div className="card-body">
-          <Weather />
+          <Weather city="Raleigh" />
           <hr />
           <div className="row">
             <Forecast />

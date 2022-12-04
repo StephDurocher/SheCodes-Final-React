@@ -1,9 +1,9 @@
 import React from "react";
 //import React, { useState } from "react";
 import "./App.css";
-//import axios from "axios";
+import axios from "axios";
 
-export default function Weather(props) {
+export default function Weather() {
   let tempHigh = `Temperature is 89℉`;
   let tempLow = `Temperature is 20℉`;
   let city = "Raleigh";
